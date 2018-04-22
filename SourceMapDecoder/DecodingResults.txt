@@ -1,0 +1,12 @@
+Symbol 0 maps to column 0, symbol 0 in file simple_programm.js and belongs to toCelsius
+Symbol 9 maps to column 0, symbol 9 in file simple_programm.js and belongs to toCelsius
+Symbol 19 maps to column 0, symbol 19 in file simple_programm.js and belongs to f
+Symbol 22 maps to column 1, symbol 4 in file simple_programm.js and belongs to f
+Symbol 29 maps to column 1, symbol 12 in file simple_programm.js and belongs to f
+Symbol 31 maps to column 1, symbol 14 in file simple_programm.js and belongs to f
+Symbol 34 maps to column 1, symbol 20 in file simple_programm.js and belongs to f
+Symbol 36 maps to column 1, symbol 22 in file simple_programm.js and belongs to f
+Symbol 40 maps to column 4, symbol 0 in file simple_programm.js and belongs to document
+Symbol 49 maps to column 4, symbol 9 in file simple_programm.js and belongs to write
+Symbol 55 maps to column 4, symbol 15 in file simple_programm.js and belongs to toCelsius
+Symbol 65 maps to column 4, symbol 25 in file simple_programm.js and belongs to toCelsius
