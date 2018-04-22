@@ -1,8 +1,8 @@
 package com.company;
 
 public class Human extends Player {
-    public Human(Intellect Intellect,Better better, String name, int balance) {
-        super(Intellect,better,name,balance);
+    public Human(String name, int balance) {
+        super(new ConsoleIntellect(), new ConsoleBetter(), name, balance);
     }
 
 }

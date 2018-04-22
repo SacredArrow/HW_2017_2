@@ -9,8 +9,9 @@ public class LimitBetter extends Better {
 
     @Override
     public int makeBet(int balance) {
-        if(limit<balance)
-        return limit;
+        if (limit < balance) {
+            return limit;
+        }
         else return balance;
     }
 }
