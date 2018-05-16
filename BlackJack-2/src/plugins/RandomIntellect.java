@@ -1,4 +1,7 @@
-package com.company;
+package plugins;
+
+import com.company.Command;
+import com.company.Intellect;
 
 public class RandomIntellect extends Intellect {
     @Override

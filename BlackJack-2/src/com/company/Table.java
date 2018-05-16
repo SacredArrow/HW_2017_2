@@ -1,22 +1,29 @@
 package com.company;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Scanner;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.*;
 
 public class Table {
     List<Player> players = new LinkedList<>();
     List<Hand> hands = new LinkedList<>();
     private static Scanner in = new Scanner(System.in);
+    @Autowired
     Dealer dealer;
+    @Autowired
     Hand dealer_hand;
     String s[] = {"Снежанна", "Анжелина", "Анжела", "Злата", "Марина", "Сюзанна"};
 
     public Table() {
+        /*
+            In order to add a new plugin, put .class file in plugins directory and add a new line to META-INF/services/com.company.Intellect
+        */
+        ServiceLoader<Intellect> serviceLoader = ServiceLoader.load(Intellect.class);
+        for (Intellect intellect : serviceLoader) {
+            players.add(new Computer(intellect, new RandomBetter(), s[(int) (Math.random() * s.length)], 1000));
+        }
         players.add(new Computer(new LimitIntellect(14), new LimitBetter(25), s[(int) (Math.random() * s.length)], 1000));
         players.add(new Computer(new LimitIntellect(20), new HalfBetter(), s[(int) (Math.random() * s.length)], 1000));
-        players.add(new Computer(new RandomIntellect(), new RandomBetter(), s[(int) (Math.random() * s.length)], 1000));
         System.out.println("Enter your name, Player");
         players.add(new Human(in.nextLine(), 1000));
         dealer = new Dealer();

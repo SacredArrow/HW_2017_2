@@ -11,7 +11,6 @@ public class LimitBetter extends Better {
     public int makeBet(int balance) {
         if (limit < balance) {
             return limit;
-        }
-        else return balance;
+        } else return balance;
     }
 }
